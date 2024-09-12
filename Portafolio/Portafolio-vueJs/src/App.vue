@@ -1,15 +1,19 @@
 <script setup>
   import NavBar from './components/NavBar.vue';
+  import QuienesSomos from './components/QuienesSomos.vue';
 </script>
 
 <template>
   <header>
     <!-- Barra de Navegacion -->
     <NavBar />
+    <!-- QUienes somos -->
+     <QuienesSomos />
+
   </header>
   <main>
-    <section id="educacion"><h2>Educación - Cursos</h2></section>
-    <section id="experiencia"><h2>Experiencia</h2></section>
+    <section id="quienes somos"><h2>¿Quienes Somos?</h2></section>
+    <section id="miembros"><h2>Miembros</h2></section>
     <section id="proyectos"><h2>Proyectos</h2></section>
     <section id="habilidades"><h2>Habilidades</h2></section>
     <section id="intereses"><h2>Intereses</h2></section>
