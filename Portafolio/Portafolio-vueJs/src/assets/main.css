@@ -1,35 +1,34 @@
+/* Importa el archivo base.css que contiene los estilos basicos */
 @import './base.css';
 
+/* Estilos para el contenedor principal con el id "app" */
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+  max-width: 1280px; /* Define un ancho máximo para que el contenido no exceda este valor */
+  margin: 0 auto;    /* Centra el contenedor horizontalmente */
+  padding: 2rem;     /* Aplica un espacio de relleno (padding) de 2 rems dentro del contenedor */
+  font-weight: normal; /* Define el peso de la fuente como normal (ni negrita ni ligera) */
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+/* Estilos para todos los enlaces (elementos <a>) */
+a {
+  text-decoration: none; /* Elimina el subrayado por defecto en los enlaces */
+  color: var(--vt-c-white); /* Establece el color del enlace usando una variable CSS (probablemente definida en base.css o en otro lugar) */
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
+/* Media query para pantallas con un ancho máximo de 768px (dispositivos móviles o tablets) */
+@media (max-width: 768px) {
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    display: flex;             /* Define que el contenedor principal usará flexbox */
+    flex-direction: column;    /* Organiza los elementos hijos en una columna (uno debajo del otro) */
+    font-size: small;          /* Ajusta el tamaño de la fuente a "small" para pantallas pequeñas */
+  }
+}
+
+/* Media query para pantallas con un ancho mínimo de 1024px (desktops o pantallas grandes) */
+@media (min-width: 1024px) {
+  #app {
+    display: flex;             /* Activa flexbox para organizar los elementos dentro del contenedor */
+    flex-direction: column;    /* Organiza los elementos hijos en una columna */
+    width: 80%;                /* Establece el ancho del contenedor al 80% del ancho de la pantalla */
   }
 }
