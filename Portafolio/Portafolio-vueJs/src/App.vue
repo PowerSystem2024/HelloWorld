@@ -1,14 +1,14 @@
 <script setup>
   import NavBar from './components/NavBar.vue';
-  import QuienesSomos from './components/QuienesSomos.vue';
+  import InformacionGral from './components/InformacionGral.vue';
 </script>
 
 <template>
   <header>
     <!-- Barra de Navegacion -->
     <NavBar />
-    <!-- QUienes somos -->
-     <QuienesSomos />
+    <!-- Informacion General -->
+     <InformacionGral />
 
   </header>
   <main>
