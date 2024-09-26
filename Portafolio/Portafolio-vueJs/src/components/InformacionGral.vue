@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-const titulo = 'Hello World';
+const titulo = 'Hello World 🌎';
 const descripcion = 'Grupo de estudiantes de la Tecnicatura Universitaria en Programación - UTN';
 const presentacion = 'Hola, Bienvenido a nuestro portafolio de proyectos. Somos 5 estudiantes de la TUP aprendiendo sobre desarollo de aplicaciones web y móviles';
 const residencia = 'Argentina';
@@ -15,7 +15,7 @@ const redsocial = ref([
 </script>
 
 <template>
-<section class="quienes-somos">
+<section class="informacionGral">
     <div class="card">
         <h1>{{titulo}}</h1>
         <h2> {{ descripcion }}</h2>
@@ -34,16 +34,19 @@ const redsocial = ref([
 <style scoped>
 h1{
     font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 p{
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
+    color: #fafaf9;
 }
 
 .card {
-    background-color: rgb(28, 41, 52);
+    background-color: #689F38;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
@@ -76,6 +79,12 @@ p{
 h3{
     font-size: 1.2rem;
     font-weight: 600;
+    color:#f0f1ed ;
+}
+
+h2{
+    color: #316870;
+    font-weight: bold;
 }
 
 </style>
