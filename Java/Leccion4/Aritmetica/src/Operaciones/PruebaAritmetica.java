@@ -25,15 +25,19 @@ public class PruebaAritmetica {
         System.out.println("aritmetica2.b = " + aritmetica2.b);
         //aritmetica1 = null; nunca utilizar esto, no se debe hacer
         //System.gc(); método para limpiar residuos, es pesado, no utilizar
+        Persona persona = new Persona("Ariel", "Betancud");
+        System.out.println("persona = " + persona);
+        System.out.println("Persona nombre: "+persona.nombre);
+        System.out.println("Persona apellido: "+persona.apellido);
     }
-    
+    // MOdularidad creamos un nuevo método
     public static void miMetodo(){
         //a = 10; // Una variable esta limitada
         System.out.println("Aquí hay otro método");
     }
     
 }
-
+// Cramos una nueva clase
 class Persona{
     String nombre;
     String apellido;
