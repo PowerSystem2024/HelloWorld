@@ -3,6 +3,7 @@
   import InformacionGral from './components/InformacionGral.vue';
   import Integrantes from './components/IntegrantesGrupo.vue';
   import HabilidadesComponent from './components/HabilidadesComponent.vue';
+  import ProyectosComponent from './components/ProyectosComponent.vue';
 </script>
 
 <template>
@@ -13,22 +14,17 @@
     <InformacionGral />
   </header>
   <main>
-    <section id="quienes somos">
-      <h2 class="section-title">¿Quienes Somos?</h2>
-    </section>
     <section id="miembros">
       <h2 class="section-title">Integrantes 💪</h2>
       <Integrantes />
     </section>
     <section id="proyectos ">
       <h2 class="section-title">Proyectos 💡</h2>
+      <ProyectosComponent/>
     </section>
     <section id="habilidades">
       <h2 class="section-title">Habilidades 📚</h2>
       <HabilidadesComponent />
-    </section>
-    <section id="intereses">
-      <h2 class="section-title">Intereses</h2>
     </section>
   </main>
 </template>
@@ -48,6 +44,6 @@
 /* Opcional: Estilo para secciones */
 section {
   padding: 20px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 3px solid #ccc;
 }
 </style>
