@@ -5,11 +5,19 @@ class Persona {//Clase padre
     static contadorPersona = 0;//Atributo estatico
     //email = 'Valor default email';//atributo no estatico
 
+    static get MAX_OBJ(){//Este metodo simula una constante
+        return 5;
+    }
+
 
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
-        this.idPersona = ++Persona.contadorPersona;
+        if(Persona.contadorPersona < Persona.MAX_OBJ){
+            this.idPersona = ++Persona.contadorPersona;
+        } else {
+            console.log('Se ha superado el maximo de objetos permitidos.')
+        }
         //console.log('Se incrementa el contador: '+Persona.contadorObjetosPersona);
     }
     get nombre(){
@@ -118,3 +126,16 @@ console.log(persona1.toString());
 console.log(persona2.toString());
 console.log(empleado1.toString());
 console.log(Persona.contadorPersona);
+let persona3 = new Persona('Carla', 'Pertosi');
+console.log(persona3.toString());
+console.log(Persona.contadorPersona);
+
+console.log(Persona.MAX_OBJ);
+//Persona.MAX_OBJ = 10 //No se puede modificar ni alterar
+console.log(Persona.MAX_OBJ);
+
+let persona4 = new Persona('Franco', 'Diaz');
+console.log(persona4.toString());
+let persona5 = new Persona('Liliana', 'Paz');
+console.log(persona5.toString());
+ //Leccion5 y 6
