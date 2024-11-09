@@ -13,12 +13,16 @@ class Persona {//Clase padre
         this._nombre = nombre;
     }
     get apellido(){
-        return this._apellido;
+        return this._ap
+        
+        ellido;
     }
     set apellido(apellido){
         this._apellido = apellido;
     }
-
+    nombreCompleto(){
+        return this._nombre+' '+this._apellido;
+    }
 }
 
 class Empleado extends Persona{//Clase Hija
@@ -28,6 +32,10 @@ class Empleado extends Persona{//Clase Hija
     }
     set departamento(departamento){
         this._departamento = departamento;
+    }
+    //SobreEscritura
+    nombreCompleto(){
+        return this._nombre+' '+this._apellido+' '+this._departamento;
     }
 }
 
@@ -68,4 +76,4 @@ console.log(persona.apellido);  // Salida: Gomez
 
 let empleado1 = new Empleado('Maria', 'Gimenez', 'Sistemas');
 console.log(empleado1);
-console.log(empleado1.nombre);
+console.log(empleado1.nombreCompleto());
