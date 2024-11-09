@@ -1,0 +1,73 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>&lt;diagram program="umletino" version="15.1"&gt;&lt;zoom_level&gt;10&lt;/zoom_level&gt;&lt;help_text&gt;Space for diagram notes&lt;/help_text&gt;&lt;element&gt;&lt;id&gt;UMLClass&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;220&lt;/x&gt;&lt;y&gt;20&lt;/y&gt;&lt;w&gt;210&lt;/w&gt;&lt;h&gt;230&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;&amp;lt;&amp;lt;Persona&amp;gt;&amp;gt;
+--
+_idPersona: number
+_nombre: string
+_apellido: string
+_edad: number
+contadorPersonas: int
+--
++ getIdPersona(): number
++ getNombre(): string
++ setNombre(nombre: string)
++ getApellido(): string
++ setApellido(apellido: string)
++ getEdad(): number
++ setEdad(edad: number)
++ toString(): string
+&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;UMLClass&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;30&lt;/x&gt;&lt;y&gt;310&lt;/y&gt;&lt;w&gt;210&lt;/w&gt;&lt;h&gt;130&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;&amp;lt;&amp;lt;Empleado&amp;gt;&amp;gt;
+--
+_idEmpleado: number
+_sueldo: number
+--
++ get_idEmpleado(): Long
++ get_sueldo(): number
++ set_sueldo(sueldo: number): void
++ toString(): string&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;UMLClass&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;380&lt;/x&gt;&lt;y&gt;310&lt;/y&gt;&lt;w&gt;210&lt;/w&gt;&lt;h&gt;130&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;&amp;lt;&amp;lt;Cliente&amp;gt;&amp;gt;
+--
+_idCliente: number
+_fechaRegistro: Date
+--
++ geIdCliente(): number
++ getFechaRegistro(): Date
++ setFechaRegistro(): Date
++ toString(): string&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;160&lt;/x&gt;&lt;y&gt;240&lt;/y&gt;&lt;w&gt;110&lt;/w&gt;&lt;h&gt;90&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=.&amp;gt;
+&amp;lt;&amp;lt;extends&amp;gt;&amp;gt;&lt;/panel_attributes&gt;&lt;additional_attributes&gt;10;70;60;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;420&lt;/x&gt;&lt;y&gt;240&lt;/y&gt;&lt;w&gt;120&lt;/w&gt;&lt;h&gt;100&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=.&amp;gt;
+&amp;lt;&amp;lt;extends&amp;gt;&amp;gt;&lt;/panel_attributes&gt;&lt;additional_attributes&gt;70;80;10;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;/diagram&gt;</help_text><element><id>UMLClass</id><coordinates><x>350</x><y>60</y><w>210</w><h>230</h></coordinates><panel_attributes>&lt;&lt;Persona&gt;&gt;
+--
+_idPersona: number
+_nombre: string
+_apellido: string
+_edad: number
+contadorPersonas
+--
+getIdPersona(): number
+getNombre():string
+setNombre(string)
+getApellido():string
+setApellido(string)
+getEdad:number
+setEdad(string)
+toString()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>530</y><w>210</w><h>200</h></coordinates><panel_attributes>&lt;&lt;Empleado&gt;&gt;
+--
+_idEmpleado: Log
+_sueldo: number
+--
+getIdEmpleado():number
+getSueldo():number
+setSueldo(number)
+toString()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>520</y><w>210</w><h>200</h></coordinates><panel_attributes>&lt;&lt;Cliente&gt;&gt;
+_idCliente: number
+_fechaRegistro: Date
+--
+_getIdCliente
+_getFechaRegistro(): Date
+_setFechaRegistro(Date)
+toString()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>280</y><w>30</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>430</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>430</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>420</y><w>470</w><h>50</h></coordinates><panel_attributes>lt=-
+r1=&lt;&lt;Extends&gt;&gt;
+
+r2=&lt;&lt;Extends&gt;&gt;
+</panel_attributes><additional_attributes>10;20;450;20</additional_attributes></element></diagram>
