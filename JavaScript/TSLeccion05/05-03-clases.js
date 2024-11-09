@@ -1,9 +1,16 @@
 //let persona3 = new Persona('Carla', 'Ponce');
 
 class Persona {//Clase padre
+
+    static contadorPersona = 0;//Atributo estatico
+    //email = 'Valor default email';//atributo no estatico
+
+
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
+        this.idPersona = ++Persona.contadorPersona;
+        //console.log('Se incrementa el contador: '+Persona.contadorObjetosPersona);
     }
     get nombre(){
         return this._nombre;
@@ -13,21 +20,26 @@ class Persona {//Clase padre
         this._nombre = nombre;
     }
     get apellido(){
-        return this._ap
-        
-        ellido;
+        return this._apellido;
     }
     set apellido(apellido){
         this._apellido = apellido;
     }
     nombreCompleto(){
-        return this._nombre+' '+this._apellido;
+        return this.idPersona+' '+this._nombre+' '+this._apellido;
     }
     //Sobreescribiendo el metodo de la clase padre (Object)
     toString(){//Regresa un string
         //Se aplica el polimorfismo que significa = multiples formas en tiempo de ejecucion.
         //El metodo que se ejecuta depende si es una referencia de un tipo padre o hija.
         return this.nombreCompleto();
+    }
+
+    static saludar(){
+        console.log('Saludos desde este metodo static');
+    }
+    static saludar2(){
+        console.log(persona.nombre+' '+persona.apellido);
     }
 }
 
@@ -87,3 +99,22 @@ console.log(empleado1.nombreCompleto());
 //Object.prototype.toString Esta es la manera de acceder a atributos y metodos de manera dinamica
 console.log(empleado1.toString);
 console.log(persona1.toString);
+
+
+//persona1.saludar(); No se utiliza desde el objeto
+Persona.saludar();
+Persona.saludar2(persona1);
+
+Empleado.saludar();
+
+//console.log(persona1.contadorObjetosPersona);
+console.log(Persona.contadorObjetosPersona);
+console.log(Empleado.contadorObjetosPersona);
+
+console.log(persona1.email);
+console.log(empleado1.email);
+//console.log(Persona.email); No puede acceder desde la clase.
+console.log(persona1.toString());
+console.log(persona2.toString());
+console.log(empleado1.toString());
+console.log(Persona.contadorPersona);
