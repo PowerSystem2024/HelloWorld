@@ -4,5 +4,5 @@
 - **Carlos Ariel Diaz Cattoni** 🎓
 - **Juan Bisaguirre** 💻
 - **Joaquin Peralta Corbellini** 📚
-- **Julieta Serrano** 🔬
+- **Julieta Aguilera** 🔬
 - **Danna Martinez** 🧪
